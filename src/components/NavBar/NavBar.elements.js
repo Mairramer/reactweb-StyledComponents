@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { FaMagento } from 'react-icons/fa'
+import { FaConnectdevelop } from 'react-icons/fa'
 import styled from 'styled-components'
 import { Container } from '../../globalStyles'
 
@@ -34,7 +34,7 @@ display:flex;
 align-items:center;
 `
 
-export const NavIcon = styled(FaMagento)` 
+export const NavIcon = styled(FaConnectdevelop)` 
 margin-right:0.5rem;
 `
 export const MobileIcon = styled.div` 

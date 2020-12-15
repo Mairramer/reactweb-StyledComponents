@@ -32,17 +32,17 @@ const NavBar = () => {
                     <NavBarContainer>
                         <NavLogo to="/">
                             <NavIcon />
-                        Ultra
+                        FIBRA OPTICA
                     </NavLogo>
                         <MobileIcon onClick={handleClick} >
                             {click ? <FaTimes /> : <FaBars />}
                         </MobileIcon>
                         <NavMenu onClick={handleClick} click={click}>
                             <NavItem>
-                                <NavLinks to="/">Home</NavLinks>
+                                <NavLinks to="/">Pagina Inicial</NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks to="/services">Services</NavLinks>
+                                <NavLinks to="/services">Planos</NavLinks>
                             </NavItem>
                             <NavItem>
                                 <NavLinks to="/products">Products</NavLinks>
