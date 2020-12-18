@@ -10,6 +10,7 @@ const NavBar = () => {
     const [button, setButton] = useState(true)
 
     const handleClick = () => setClick(!click)
+    const closeMobileMenu = () => setClick(false)
 
     const showButton = () => {
         if (window.innerWidth <= 960) {
@@ -30,7 +31,7 @@ const NavBar = () => {
             <IconContext.Provider value={{ color: '#fff' }}>
                 <Nav>
                     <NavBarContainer>
-                        <NavLogo to="/">
+                        <NavLogo to="/" onClick={closeMobileMenu}>
                             <NavIcon />
                         FIBRA OPTICA
                     </NavLogo>
@@ -42,10 +43,10 @@ const NavBar = () => {
                                 <NavLinks to="/">Pagina Inicial</NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks to="/services">Planos</NavLinks>
+                                <NavLinks to="/plans">Planos</NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks to="/products">Products</NavLinks>
+                                <NavLinks to="/products">Contato</NavLinks>
                             </NavItem>
                             <NavItemBtn>
                                 {button ? (

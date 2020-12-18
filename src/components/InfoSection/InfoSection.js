@@ -41,7 +41,7 @@ const InfoSection = ({
                                     {description}
                                 </Subtitle>
 
-                                <Link to='/sign-up'>
+                                <Link to='/plans'>
                                     <Button big fontBig primary={primary}>
                                         {buttonLabel}
                                     </Button>
